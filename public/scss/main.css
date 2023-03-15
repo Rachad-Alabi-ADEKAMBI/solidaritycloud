@@ -2,6 +2,34 @@ html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  line-height: 1.7em;
+  text-align: justify;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: 500ms ease-in-out;
+}
+
+a:hover {
+  color: #019C00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #019C00;
+  border: 1px solid #019C00;
 }
 
 .hero {
@@ -9,7 +37,7 @@ html, body {
   min-height: 400px;
   margin: 0 auto;
   display: block;
-  background-image: url("http://luuluilui.fr/public/img/agustin-segura-eDXRq-2LfNM-unsplash.jpg");
+  background-image: url("http://127.0.0.1/solidairecloud/public/img/sander-weeteling-KABfjuSOx74-unsplash(1).jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,11 +62,70 @@ html, body {
   font-weight: 800;
 }
 
+.subtitle {
+  color: #019C00;
+}
+
 .boxes .box {
-  height: 400px;
-  height: 90%;
+  height: 650px;
+  position: relative;
+  width: 90%;
+  margin: 15px;
   border: 5px #019C00 solid;
   position: relative;
+  padding: 8px;
+  border-radius: 5px;
+}
+.boxes .box h2 {
+  text-align: center;
+  color: #019C00;
+}
+.boxes .box h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.boxes .box .round {
+  width: 120px;
+  height: 120px;
+  border-radius: 70px;
+  border: 8px solid #019C00;
+  margin: auto;
+  text-align: center;
+}
+.boxes .box ul li {
+  color: black;
+}
+.boxes .box ul li i {
+  color: #019C00;
+}
+.section .container .check {
+  background-color: black;
+  height: 180px;
+  border: 5px white solid;
+  padding-top: 45px;
+  color: white;
+  text-align: center;
+}
+.section .container .check .text {
+  font-weight: bold;
+}
+.section .container .check form {
+  margin: 10px auto 15px auto;
+  width: 80%;
+}
+.section .container .about__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section .container .about__content__image img {
+  width: 550px;
+  height: auto;
+  border-radius: 5px;
+}
+.section .container .footer {
+  display: none;
 }
 
 /*responsive for 350px*/
