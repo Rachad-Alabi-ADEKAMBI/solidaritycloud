@@ -11,7 +11,7 @@
 <body>
     <?php include 'parts/header.php'; ?>
 
-    <div class="content">
+    <div class="content" id="app">
         <section class="section">
             <div class="container">
                 <div class="hero">
@@ -70,11 +70,6 @@
                                 en plus (11,90 euros/an). <br>
                                 Si vous l’avez déjà : coût de transfert de domaine existant (11,99 euros) <br>
 
-                                <strong>
-                                    Pour permettre à tous les entrepreneurs de lancer leur site ou boutique en ligne
-                                    sans
-                                    dépenser trop au début de leur activité.
-                                </strong>
                             </p>
                             <h3>
                                 Offre auto-hébergement
@@ -149,8 +144,9 @@
                                 Contrats clients
                                 Vous voulez vendre des sites web et des services de création
                                 d’applications mobiles et de marketing à vos clients, mais vous voulez
-                                avoir l’air professionnel ? Vous allez obtenir un accès à des « contrats
-                                clients ...» <span>En savoir plus</span>
+                                avoir l’air professionnel ? ...
+                                <btn class="btn btn-primary" @click='displayBlaster()'>En savoir plus</btn>
+
                             </p>
 
                             <span>
@@ -160,8 +156,8 @@
                             <p class="text text-justify">
                                 Créez, planifiez et republiez quatre types d'offres (pourcentage de remise, remise en
                                 espèces, gratuit, Bogo) avec trois types de publication (image, vidéo, carrousel) pour
-                                vos pages Facebook. C'est la première application qui peut créer
-                                <span>En savoir plus</span>
+                                vos pages Facebook ...
+                                <btn class="btn btn-primary" @click='displayBlaster()'>En savoir plus</btn>
                             </p>
 
                             <span>
@@ -170,18 +166,18 @@
 
                             <p class="text text-justify">
                                 Il s'agit du plugin WordPress Popup tout-en-un qui transforme votre site Web en une
-                                centrale de génération de leads. Construisez votre liste de diffusion, plus grande,-
-                                plus rapide et plus ciblée que ... <span>En savoir plus</span>
+                                centrale de génération de leads. Construisez votre liste de diffusion ... <btn
+                                    class="btn btn-primary" @click='displayWeb()'>En
+                                    savoir plus</btn>
                             </p>
-
                             <span>
                                 Machine site clone
                             </span>
 
                             <p class="text text-justify">
                                 SiteClone Machine est un script PHP qui vous permet de faire des copies, des
-                                clones ou des archives de tout site Web . Peu importe que ce site Web soit créé avec
-                                des fichiers HTML réguliers ou q... <span>En savoir plus</span>
+                                clones ou des archives de tout site Web
+                                <btn class="btn btn-primary" @click='displayClone()'>En savoir plus</btn>
                             </p>
                         </div>
                     </div>
@@ -213,8 +209,11 @@
                                 Ensuite nous contacter pour signaler votre intérêt à devenir revendeur. Vous recevrez
                                 plus
                                 d'informations sur notre programme.
-                                Si intéressé par notre offre unique, voici la procédure pour votre paiement :
                             </p>
+
+                            <button class="btn btn-success mx-auto text-center">
+                                Acheter
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -224,6 +223,11 @@
         <section class="section mt-5">
             <div class="container" id="check">
                 <div class="row check text-center   ">
+                    <p class="text text-center mx-auto fw-bold">
+                        Pour permettre à tous les entrepreneurs de lancer leur site ou boutique en ligne
+                        sans
+                        dépenser trop au début de leur activité.
+                    </p> <br>
                     <form action="" method="">
                         <label for="">
                             <input type="text">

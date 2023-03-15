@@ -23,6 +23,10 @@ a:hover {
   font-weight: bold;
 }
 
+.btn {
+  font-weight: bold;
+}
+
 .btn-primary:hover {
   background-color: #019C00;
   border: 1px solid #019C00;
@@ -94,16 +98,16 @@ a:hover {
 .boxes .box ul li i {
   color: #019C00;
 }
-.boxes .box .btn {
-  position: absolute;
-  background-color: red;
-}
-
 .section .container .check {
   background-color: black;
-  height: 150px;
+  height: 180px;
   border: 5px white solid;
   padding-top: 45px;
+  color: white;
+  text-align: center;
+}
+.section .container .check .text {
+  font-weight: bold;
 }
 .section .container .check form {
   margin: 10px auto 15px auto;
@@ -121,22 +125,7 @@ a:hover {
   border-radius: 5px;
 }
 .section .container .footer {
-  background-color: aliceblue;
-  padding-top: 30px;
-  background-color: red;
-}
-.section .container .footer ul {
-  margin: 10px auto;
-}
-.section .container .footer ul li {
-  margin: 20px;
-  display: inline;
-}
-.section .container .footer ul li a {
-  margin: 10px;
-}
-.section .container .footer ul li a i {
-  color: #019C00;
+  display: none;
 }
 
 /*responsive for 350px*/

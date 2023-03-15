@@ -36,6 +36,10 @@ a:hover{
 
 }
 
+.btn{
+    font-weight: bold;
+}
+
 .btn-primary:hover{
     background-color: $green;
     border: 1px solid $green;
@@ -123,8 +127,7 @@ a:hover{
         }
 
         .btn{
-            position: absolute;
-            background-color: red;
+
         }
 
 
@@ -137,9 +140,16 @@ a:hover{
    .container{
     .check{
         background-color: black;
-        height: 150px;
+        height: 180px;
         border: 5px white solid;
         padding-top: 45px;
+        color: white;
+        text-align: center;
+
+        .text{
+            font-weight: bold;
+        }
+
         form{
             margin: 10px auto 15px auto;
             width: 80%;
@@ -162,29 +172,11 @@ a:hover{
     }
 
     .footer{
-        background-color: aliceblue;
-        padding-top: 30px;
-        background-color: red;
-
-        ul{
-            margin: 10px auto;
-
-            li{
-                margin: 20px;
-                display: inline;
-
-
-                a{
-                    margin: 10px;
-
-                    i{
-                        color: $green;
-                    }
-                }
-            }
-        }
-    }
+        display: none;
+       }
    }
+
+
 }
 
 /*responsive for 350px*/
