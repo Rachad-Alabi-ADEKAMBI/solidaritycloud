@@ -1,0 +1,177 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7em;
+    text-align: justify;
+  }
+
+  ul li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    transition: 500ms ease-in-out;
+  }
+
+  a:hover {
+    color: #019C00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .btn {
+    font-weight: bold;
+  }
+
+  .btn-primary:hover {
+    background-color: #019C00;
+    border: 1px solid #019C00;
+  }
+
+  .hero {
+    height: 70vh;
+    min-height: 450px;
+    margin: 0 auto;
+    display: block;
+    background-image: url("<?php echo plugin_dir_url( __FILE__ ) . 'img/sander-weeteling-KABfjuSOx74-unsplash(1).jpg'; ?>");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(103, 199, 119, 0.52), rgba(64, 95, 141, 0.73)), url("http://127.0.0.1/solidairecloud/public/img/sander-weeteling-KABfjuSOx74-unsplash(1).jpg");
+    width: 100%;
+    padding-top: 90px;
+  }
+  .hero__content {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    padding-top: 60px;
+    text-align: center;
+  }
+  .hero__content h1 {
+    font-size: 3em;
+    font-style: italic;
+    color: white;
+  }
+  .hero__content p {
+    margin: 20px auto;
+    font-style: 1.1em;
+    font-weight: 800;
+  }
+
+  .subtitle {
+    color: #019C00;
+  }
+
+  .boxes .box {
+    height: 650px;
+    position: relative;
+    width: 90%;
+    margin: 15px;
+    border: 5px #019C00 solid;
+    position: relative;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .boxes .box h2 {
+    text-align: center;
+    color: #019C00;
+  }
+  .boxes .box h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .boxes .box .round {
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+    border: 8px solid #019C00;
+    margin: auto;
+    text-align: center;
+  }
+  .boxes .box ul li {
+    color: black;
+  }
+  .boxes .box ul li i {
+    color: #019C00;
+  }
+  .section .container .check {
+    background-color: black;
+    height: 180px;
+    border: 5px white solid;
+    padding-top: 45px;
+    color: white;
+    text-align: center;
+  }
+  .section .container .check .text {
+    font-weight: bold;
+  }
+  .section .container .check form {
+    margin: 10px auto 15px auto;
+    width: 80%;
+  }
+  .section .container .about {
+    margin: 20px auto;
+  }
+  .section .container .about__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .section .container .about__content__image {
+    text-align: center;
+  }
+  .section .container .about__content__image img {
+    width: 550px;
+    height: auto;
+    border-radius: 5px;
+    margin: auto;
+  }
+  .section .container .about__content__text {
+    padding-top: 30px;
+  }
+
+  .footer {
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+  }
+  .footer ul {
+    margin: auto;
+  }
+  .footer ul li {
+    display: inline;
+    margin: 15px;
+  }
+
+  /*responsive for 350px*/
+  @media screen and (min-width: 350px) and (max-width: 766px) {
+    html .hero, body .hero {
+      height: 50vh;
+      padding-top: 60px;
+      min-height: auto;
+    }
+    html .hero__content p, body .hero__content p {
+      margin: 40px auto;
+    }
+    html .hero__content .btn, body .hero__content .btn {
+      margin: 20px auto;
+    }
+    html .boxes .box, body .boxes .box {
+      height: auto;
+    }
+    html .section .container .check, body .section .container .check {
+      height: auto;
+    }
+    html .section .container .about__content__image img, body .section .container .about__content__image img {
+      width: 320px;
+      margin: auto;
+      vertical-align: auto;
+    }
+  }/*# sourceMappingURL=main.css.map */
