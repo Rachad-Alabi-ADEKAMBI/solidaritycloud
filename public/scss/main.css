@@ -3,7 +3,15 @@ html, body {
   margin: 0;
   padding: 0;
   line-height: 1.7em;
-  text-align: justify;
+  text-align: left;
+}
+
+.content {
+  min-height: 95vh;
+}
+
+.fa-arrow-right {
+  color: #019C00;
 }
 
 ul li {
@@ -25,6 +33,7 @@ a:hover {
 
 .btn {
   font-weight: bold;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -64,7 +73,7 @@ a:hover {
   font-weight: 800;
 }
 
-.subtitle {
+.subtitle, h2 {
   color: #019C00;
 }
 
@@ -93,6 +102,17 @@ a:hover {
   border: 8px solid #019C00;
   margin: auto;
   text-align: center;
+  padding-top: 8px;
+}
+.boxes .box .round span {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+.boxes .box .round .text {
+  font-size: 0.8em;
+}
+.boxes .box .round .text strong {
+  font-weight: bold;
 }
 .boxes .box ul li {
   color: black;
@@ -100,6 +120,12 @@ a:hover {
 .boxes .box ul li i {
   color: #019C00;
 }
+.boxes .box span {
+  color: #019C00;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
 .section .container .check {
   background-color: black;
   height: 180px;
@@ -135,6 +161,25 @@ a:hover {
 }
 .section .container .about__content__text {
   padding-top: 30px;
+}
+.section .container .about__content__text p ul li i {
+  color: #019C00;
+}
+
+.bonus {
+  width: 90%;
+  margin: auto;
+  padding-top: 40px;
+}
+.bonus h2 {
+  color: #019C00;
+}
+.bonus .close {
+  margin: auto;
+  cursor: pointer;
+}
+.bonus .close:hover {
+  color: #019C00;
 }
 
 .footer {

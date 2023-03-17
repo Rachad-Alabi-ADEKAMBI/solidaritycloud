@@ -13,7 +13,15 @@ html, body{
    margin: 0;
    padding: 0;
    line-height: 1.7em;
-   text-align: justify;
+   text-align: left;
+}
+
+.content{
+    min-height: 95vh;
+}
+
+.fa-arrow-right{
+    color: $green;
 }
 
 ul{
@@ -38,6 +46,7 @@ a:hover{
 
 .btn{
     font-weight: bold;
+    cursor: pointer;
 }
 
 .btn-primary:hover{
@@ -87,7 +96,7 @@ a:hover{
 }
 
 
-.subtitle{
+.subtitle, h2{
     color: $green;
 }
 
@@ -120,6 +129,20 @@ a:hover{
             border: 8px solid $green;
             margin: auto;
             text-align: center;
+            padding-top: 8px;
+
+            span{
+                font-weight: bold;
+                font-size: 1.6em;
+            }
+
+            .text{
+                font-size: 0.8em;
+
+                strong{
+                    font-weight: bold;
+                }
+            }
         }
 
         ul{
@@ -133,6 +156,12 @@ a:hover{
 
         .btn{
 
+        }
+
+        span{
+            color: $green;
+            text-decoration: underline;
+            margin-top: 5px;
         }
 
 
@@ -179,12 +208,43 @@ a:hover{
 
             &__text{
                 padding-top: 30px;
+
+                p{
+                    ul{
+                        li{
+                            i{
+                                color: $green;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 
 
    }
+
+
+}
+
+.bonus{
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+
+    h2{
+        color: $green;
+    }
+
+    .close{
+        margin: auto;
+        cursor: pointer;
+    }
+
+    .close:hover{
+        color: $green;
+    }
 
 
 }
