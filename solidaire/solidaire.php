@@ -22,34 +22,35 @@ function displaySolidaire()
     );
     $image_url2 = esc_url(
         plugin_dir_url(__FILE__) .
-            'img/possessed-photography-jIBMSMs4_kA-unsplash(1).jpg'
+            '/img/possessed-photography-jIBMSMs4_kA-unsplash(1).jpg'
     );
 
     echo "
     <div class='content' id='app'>
-    <nav class='navbar navbar-expand-lg navbar-light bg-light'>
+            <nav class='navbar navbar-expand-lg navbar-light bg-light'>
 
 
-    <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-        <ul class='navbar-nav mx-auto'>
-            <li class='nav-item active'>
-                <a class='nav-link' href='#'>Accueil <span class='sr-only'>(current)</span></a>
-            </li>
-            <li class='nav-item'>
-                <a class='nav-link' href='#offer'>L'offre unique</a>
-            </li>
+                    <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+                        <ul class='navbar-nav mx-auto'>
+                            <li class='nav-item active'>
+                                <a class='nav-link' href='#'>Accueil <span class='sr-only'>(current)</span></a>
+                            </li>
+                            <li class='nav-item'>
+                                <a class='nav-link' href='#offer'>L'offre unique</a>
+                            </li>
 
-            <li class='nav-item'>
-                <a class='nav-link disabled' href='#about'>A propos</a>
-            </li>
-            <li class='nav-item'>
-                <a class='nav-link disabled' href='#'>Contact</a>
-            </li>
+                            <li class='nav-item'>
+                                <a class='nav-link disabled' href='#about'>A propos</a>
+                            </li>
+                            <li class='nav-item'>
+                                <a class='nav-link disabled' href='#'>Contact</a>
+                            </li>
 
-        </ul>
-    </div>
-</nav>
-            <div class=' v-if=' showHome'>
+                        </ul>
+                    </div>
+            </nav>
+
+            <div class='' v-if='showHome'>
                 <section class='section'>
                     <div class='container'>
                         <div class='hero'>
@@ -302,227 +303,220 @@ function displaySolidaire()
 
                         <div class='row about__content '>
                             <div class='col-sm-12 col-md-6 text-center about__content__image '>
-                                <img class='mx-auto' src='public/img/alex-knight-2EJCSULRwC8-unsplash.jpg' alt=''>
-                            </div>
-
-                            <div class='col-sm-12 col-md-6 about__content__text'>
-                                <p class='text text-justify'>
-                                    Alors qu’est-ce que Solidarityword ?
-                                    Une association à but non lucratif.
-                                    Elle a pour but de soutenir des projets citoyens innovants.
-                                    Dont notre structure au Togo
-                                    <br>
-
-                                <ul>
-                                    <li class='mt-2'> <i class='fas fa-arrow-right mr-1'></i> Entreprise d'Action du
-                                        Millenaire.</li>
-                                    <li class='mt-2'> <i class='fas fa-arrow-right mr-1'></i> L'entreprise est basée sur
-                                        Lomé
-                                        au Togo.</li>
-                                    <li class='mt-2'><i class='fas fa-arrow-right mr-1'></i> Lomé, Hedzranawoe, rue 206,
-                                        maison 114.</li>
-                                    <li class='mt-2'> <i class='fas fa-arrow-right mr-1'></i> Elle fait partie de
-                                        l'organisation iAmeAI.
-                                    </li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class='section bg-light mt-4'>
-                    <div class='container about' id='about'>
-                        <h2 class='subtitle mx-auto text-center'>
-                            Contact
-                        </h2>
-
-                        <div class='row about__content '>
-                            <div class='col-sm-12 col-md-6 about__content__image text-left'>
-                                <form class='form' method='POST' action='./api/api.php?action=contact'>
-                                    <div class='form-group'>
-                                        <label for='inputAddress'>Email: </label> <span class='red'>*</span>
-                                        <input type='Email' class='form-control' id='inputAddress' placeholder='Email'
-                                            name='email' required>
-                                    </div>
-                                    <div class='form-row mx-auto'>
-                                        <div class='form-group col-md-6'>
-                                            <label for='inputEmail4'>Nom: </label> <span class='red'>*</span>
-                                            <input type='text' class='form-control' id='inputEmail4' placeholder='Nom'
-                                                name='first_name' required>
-                                        </div>
-                                        <div class='form-group col-md-6'>
-                                            <label for='inputPassword4'>Prénoms:</label><span class='red'>*</span>
-                                            <input type='text' class='form-control' id='inputPassword4'
-                                                placeholder='Prénoms' required name='last_name'>
-                                        </div>
-                                    </div>
-
-                                    <div class='form-row mx-auto mt-2'>
-                                        <div class='form-group  col-4'>
-                                            <label for='inputEmail4'>Indicatif : </label> <span class='red'>*</span>
-                                            <input type='text' class='form-control' id='inputEmail4'
-                                                placeholder='Indicatif de téléphone'
-                                                onkeyup='if(this.value<0){this.value= this.value * -1}'
-                                                name='phone_code'>
-                                        </div>
-                                        <div class='form-group  col-8'>
-                                            <label for='inputPassword4'>Num de téléphone: </label> <span
-                                                class='red'>*</span>
-                                            <input type='text' class='form-control' id='inputPassword4'
-                                                placeholder='Numéro de téléphone' name='phone_number'
-                                                onkeyup='if(this.value<0){this.value= this.value * -1}' required>
-                                        </div>
-                                    </div>
-
-                                    <div class='form-group'>
-                                        <label for='exampleFormControlTextarea1'>Message:</label>
-                                        <textarea class='form-control' id='exampleFormControlTextarea1'
-                                            rows='3'></textarea>
-                                    </div>
-
-                                    <p class='text-left'>
-                                        (Les cases obligatoires sont précédées de <span class='red'>*</span>)
-                                    </p>
-
-                                    <div class='form-group mt-3'>
-                                        <div class='form-check'>
-                                            <input class='form-check-input' type='checkbox' value='' id='invalidCheck'
-                                                required>
-                                            <label class='form-check-label' for='invalidCheck'>
-                                                Oui je comprends et j'accepte que ces informations soient <br> stockées
-                                                afin de me recontacter
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <button type='submit' class='btn btn-primary'>Envoyer</button>
-                                </form>
-                            </div>
-
-                            <div class='col-sm-12 col-md-6 about__content__image'>
-                                <img class='mt-2' src='public/img/possessed-photography-jIBMSMs4_kA-unsplash(1).jpg'
-                                    alt=''>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <div class='bonus' v-if='showContracts'>
-                <div class='close' @click='displayHome()'>
-                    X
-                </div> <br>
-
-                <h2 class='subtitle'>
-                    Contrats clients
-                </h2> <br>
-                <p>
-                    Vous voulez vendre des sites web et des services de création
-                    d’applications mobiles et de marketing à vos clients, mais vous voulez
-                    avoir l’air professionnel ? Vous allez obtenir un accès à des « contrats
-                    clients » professionnels que vous pouvez utiliser lors de la vente de vos
-                    services à des clients locaux ou en ligne et avoir l’air plus légitime et
-                    professionnel. Le moyen le plus simple de rester en sécurité et de facturer
-                    plus !
-                </p>
-            </div>
-
-            <div class='bonus' v-if='showBlaster'>
-                <div class='close' @click='displayHome()'>
-                    X
-                </div> <br>
-                <h2>
-                    FB BLASTER
-                </h2> <br>
-                <p>Créez, planifiez et republiez quatre types d'offres (pourcentage de remise, remise en
-                    espèces, gratuit, Bogo) avec trois types de publication (image, vidéo, carrousel) pour
-                    vos pages Facebook. C'est la première application qui peut créer des publications
-                    d'offres similaires aux annonces d'offres Facebook !
-                    Vous pouvez démarrer votre propre entreprise et offrir des services d'affichage à vos
-                    clients en quelques minutes ! C'est une application SaaS multi-utilisateurs. PayPal et
-                    Stripe sont intégrés pour recevoir des paiements.
-                </p>
-            </div>
-
-            <div class='bonus' v-if='showWeb'>
-                <div class='close' @click='displayHome()'>
-                    X
-                </div> <br>
-                <h2>
-                    WP WEB TRANSFORMER
-                </h2> <br>
-                <p>
-                    Il s'agit du plugin WordPress Popup tout-en-un qui transforme votre site Web en une
-                    centrale de génération de leads. Construisez votre liste de diffusion, plus grande,-
-                    plus rapide et plus ciblée que jamais. Vous pouvez créer de superbes pop-ups en
-                    quelques minutes et commencer à convertir les visiteurs de votre site Web en
-                    abonnés, abonnés sociaux et clients. Plugin contextuel WordPress d'optimisation de
-                    la conversion de classe mondiale avec plus de 10 positions d'affichage contextuelle,
-                    plus de 12 déclencheurs et filtres de comportement des visiteurs différents. La
-                    meilleure chose à propos de ce plugin contextuel est qu'il possède une énorme
-                    bibliothèque de plus de 100 modèles prêts à l'emploi magnifiquement conçus et à
-                    haute conversion. Des fonctionnalités telles que la fenêtre contextuelle de sortie, la
-                    fenêtre contextuelle opt-in, la fenêtre contextuelle coulissante, la fenêtre contextuelle
-                    vidéo, la fenêtre contextuelle au clic, la fenêtre contextuelle sociale, les formulaires
-                    intégrés, les boîtes de widgets, les barres d'informations en font le plugin de
-                    génération de popup et de leads le plus puissant.
-                </p>
-            </div>
-
-            <div class='bonus' v-if='showClone'>
-                <div class='close' @click='displayHome()'>
-                    X
-                </div> <br>
-                <h2>
-                    MACHINE SITE CLONE
-                </h2> <br>
-                <p>
-                    SiteClone Machine est un script PHP qui vous permet de faire des copies, des
-                    clones ou des archives de tout site Web . Peu importe que ce site Web soit créé avec
-                    des fichiers HTML réguliers ou qu'il ait été construit à l'aide d'un CMS comme
-                    Wordpress ou Joomla ; SiteClones les clone tous ! Une fois qu'un clone ou une copie
-                    a été créé ; vous pouvez choisir de parcourir le clone en ligne, de le télécharger sous
-                    forme d'archive ZIP, de l'envoyer par e-mail ou de le télécharger sur un serveur
-                    distant via FTP. Avec SiteClone Machine, vous pouvez commencer à gagner de
-                    l'argent grâce à la conception web et à utiliser intelligemment cet outil pour démarrer
-                    l'ensemble du processus de conception web... Non seulement SiteClone Machine
-                    génère une copie exacte du site mais il réécrit également toutes les URL pour
-                    qu'elles soient entièrement relatives, ce qui vous permet d'utiliser le site cloné soit
-                    sur un serveur Web, soit localement sur votre ordinateur.
-                </p>
-            </div>
-
-            <div class='footer'>
-<ul class='mx-auto'>
-    <li>
-        <a href='#'>
-            Accueil
-        </a>
-    </li>
-
-    <li>
-        <a href='#offer'>
-            L'offre unique
-        </a>
-    </li>
-
-    <li>
-        <a href='#about'>
-            A propos
-        </a>
-    </li>
-
-    <li>
-        <a href='#contact'>
-            Contact
-        </a>
-    </li>
-</ul>
+                                <img class='mx-auto'  src='$image_url1' alt=''>
 </div>
 
+<div class='col-sm-12 col-md-6 about__content__text'>
+    <p class='text text-justify'>
+        Alors qu’est-ce que Solidarityword ?
+        Une association à but non lucratif.
+        Elle a pour but de soutenir des projets citoyens innovants.
+        Dont notre structure au Togo
+        <br>
 
-        </div>
-    ";
+    <ul>
+        <li class='mt-2'> <i class='fas fa-arrow-right mr-1'></i> Entreprise d'Action du
+            Millenaire.</li>
+        <li class='mt-2'> <i class='fas fa-arrow-right mr-1'></i> L'entreprise est basée sur
+            Lomé
+            au Togo.</li>
+        <li class='mt-2'><i class='fas fa-arrow-right mr-1'></i> Lomé, Hedzranawoe, rue 206,
+            maison 114.</li>
+        <li class='mt-2'> <i class='fas fa-arrow-right mr-1'></i> Elle fait partie de
+            l'organisation iAmeAI.
+        </li>
+    </ul>
+    </p>
+</div>
+</div>
+</div>
+</section>
+
+<section class='section bg-light mt-4'>
+    <div class='container about' id='about'>
+        <h2 class='subtitle mx-auto text-center'>
+            Contact
+        </h2>
+
+        <div class='row about__content '>
+            <div class='col-sm-12 col-md-6 about__content__image text-left'>
+                <form class='form' method='POST' action='./api/api.php?action=contact'>
+                    <div class='form-group'>
+                        <label for='inputAddress'>Email: </label> <span class='red'>*</span>
+                        <input type='Email' class='form-control' id='inputAddress' placeholder='Email' name='email'
+                            required>
+                    </div>
+                    <div class='form-row mx-auto'>
+                        <div class='form-group col-md-6'>
+                            <label for='inputEmail4'>Nom: </label> <span class='red'>*</span>
+                            <input type='text' class='form-control' id='inputEmail4' placeholder='Nom' name='first_name'
+                                required>
+                        </div>
+                        <div class='form-group col-md-6'>
+                            <label for='inputPassword4'>Prénoms:</label><span class='red'>*</span>
+                            <input type='text' class='form-control' id='inputPassword4' placeholder='Prénoms' required
+                                name='last_name'>
+                        </div>
+                    </div>
+
+                    <div class='form-row mx-auto mt-2'>
+                        <div class='form-group  col-4'>
+                            <label for='inputEmail4'>Indicatif : </label> <span class='red'>*</span>
+                            <input type='text' class='form-control' id='inputEmail4'
+                                placeholder='Indicatif de téléphone'
+                                onkeyup='if(this.value<0){this.value= this.value * -1}' name='phone_code'>
+                        </div>
+                        <div class='form-group  col-8'>
+                            <label for='inputPassword4'>Num de téléphone: </label> <span class='red'>*</span>
+                            <input type='text' class='form-control' id='inputPassword4'
+                                placeholder='Numéro de téléphone' name='phone_number'
+                                onkeyup='if(this.value<0){this.value= this.value * -1}' required>
+                        </div>
+                    </div>
+
+                    <div class='form-group'>
+                        <label for='exampleFormControlTextarea1'>Message:</label>
+                        <textarea class='form-control' id='exampleFormControlTextarea1' rows='3'></textarea>
+                    </div>
+
+                    <p class='text-left'>
+                        (Les cases obligatoires sont précédées de <span class='red'>*</span>)
+                    </p>
+
+                    <div class='form-group mt-3'>
+                        <div class='form-check'>
+                            <input class='form-check-input' type='checkbox' value='' id='invalidCheck' required>
+                            <label class='form-check-label' for='invalidCheck'>
+                                Oui je comprends et j'accepte que ces informations soient <br> stockées
+                                afin de me recontacter
+                            </label>
+                        </div>
+                    </div>
+                    <button type='submit' class='btn btn-primary'>Envoyer</button>
+                </form>
+            </div>
+
+            <div class='col-sm-12 col-md-6 about__content__image'>
+            <img class='mx-auto'  src='$image_url2' alt=''>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<div class='bonus' v-if='showContracts'>
+    <div class='close' @click='displayHome()'>
+        X
+    </div> <br>
+
+    <h2 class='subtitle'>
+        Contrats clients
+    </h2> <br>
+    <p>
+        Vous voulez vendre des sites web et des services de création
+        d’applications mobiles et de marketing à vos clients, mais vous voulez
+        avoir l’air professionnel ? Vous allez obtenir un accès à des « contrats
+        clients » professionnels que vous pouvez utiliser lors de la vente de vos
+        services à des clients locaux ou en ligne et avoir l’air plus légitime et
+        professionnel. Le moyen le plus simple de rester en sécurité et de facturer
+        plus ! <br><br><br><br><br><br>
+    </p>
+</div>
+
+<div class='bonus' v-if='showBlaster'>
+    <div class='close' @click='displayHome()'>
+        X
+    </div> <br>
+    <h2>
+        FB BLASTER
+    </h2> <br>
+    <p>Créez, planifiez et republiez quatre types d'offres (pourcentage de remise, remise en
+        espèces, gratuit, Bogo) avec trois types de publication (image, vidéo, carrousel) pour
+        vos pages Facebook. C'est la première application qui peut créer des publications
+        d'offres similaires aux annonces d'offres Facebook !
+        Vous pouvez démarrer votre propre entreprise et offrir des services d'affichage à vos
+        clients en quelques minutes ! C'est une application SaaS multi-utilisateurs. PayPal et
+        Stripe sont intégrés pour recevoir des paiements.<br><br><br><br><br><br>
+    </p>
+</div>
+
+<div class='bonus' v-if='showWeb'>
+    <div class='close' @click='displayHome()'>
+        X
+    </div> <br>
+    <h2>
+        WP WEB TRANSFORMER
+    </h2> <br>
+    <p>
+        Il s'agit du plugin WordPress Popup tout-en-un qui transforme votre site Web en une
+        centrale de génération de leads. Construisez votre liste de diffusion, plus grande,-
+        plus rapide et plus ciblée que jamais. Vous pouvez créer de superbes pop-ups en
+        quelques minutes et commencer à convertir les visiteurs de votre site Web en
+        abonnés, abonnés sociaux et clients. Plugin contextuel WordPress d'optimisation de
+        la conversion de classe mondiale avec plus de 10 positions d'affichage contextuelle,
+        plus de 12 déclencheurs et filtres de comportement des visiteurs différents. La
+        meilleure chose à propos de ce plugin contextuel est qu'il possède une énorme
+        bibliothèque de plus de 100 modèles prêts à l'emploi magnifiquement conçus et à
+        haute conversion. Des fonctionnalités telles que la fenêtre contextuelle de sortie, la
+        fenêtre contextuelle opt-in, la fenêtre contextuelle coulissante, la fenêtre contextuelle
+        vidéo, la fenêtre contextuelle au clic, la fenêtre contextuelle sociale, les formulaires
+        intégrés, les boîtes de widgets, les barres d'informations en font le plugin de
+        génération de popup et de leads le plus puissant.<br><br><br><br><br><br>
+    </p>
+</div>
+
+<div class='bonus' v-if='showClone'>
+    <div class='close' @click='displayHome()'>
+        X
+    </div> <br>
+    <h2>
+        MACHINE SITE CLONE
+    </h2> <br>
+    <p>
+        SiteClone Machine est un script PHP qui vous permet de faire des copies, des
+        clones ou des archives de tout site Web . Peu importe que ce site Web soit créé avec
+        des fichiers HTML réguliers ou qu'il ait été construit à l'aide d'un CMS comme
+        Wordpress ou Joomla ; SiteClones les clone tous ! Une fois qu'un clone ou une copie
+        a été créé ; vous pouvez choisir de parcourir le clone en ligne, de le télécharger sous
+        forme d'archive ZIP, de l'envoyer par e-mail ou de le télécharger sur un serveur
+        distant via FTP. Avec SiteClone Machine, vous pouvez commencer à gagner de
+        l'argent grâce à la conception web et à utiliser intelligemment cet outil pour démarrer
+        l'ensemble du processus de conception web... Non seulement SiteClone Machine
+        génère une copie exacte du site mais il réécrit également toutes les URL pour
+        qu'elles soient entièrement relatives, ce qui vous permet d'utiliser le site cloné soit
+        sur un serveur Web, soit localement sur votre ordinateur. <br><br><br><br><br><br>
+    </p>
+</div>
+
+<div class='footer'>
+    <ul class='mx-auto'>
+        <li>
+            <a href='#'>
+                Accueil
+            </a>
+        </li>
+
+        <li>
+            <a href='#offer'>
+                L'offre unique
+            </a>
+        </li>
+
+        <li>
+            <a href='#about'>
+                A propos
+            </a>
+        </li>
+
+        <li>
+            <a href='#contact'>
+                Contact
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+";
     wp_enqueue_script(
         'vue',
         esc_url('https://unpkg.com/vue@3/dist/vue.global.js'),

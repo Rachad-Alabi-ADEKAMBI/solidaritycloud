@@ -9,14 +9,27 @@ createApp({
         showBlaster: false,
         showClone: false,
         showWeb: false,
+        mot: 'IMMOBILIER BENIN',
+            indexLettre: 0,
+    motAffiche: ''
     }
+},
+created() {
+  setInterval(() => {
+    if (this.indexLettre < this.mot.length) {
+      this.motAffiche += this.mot[this.indexLettre];
+      this.indexLettre++;
+    }
+  }, 200);
 },
 mounted: function() {
    this.displayHome();
 },
 
+
 methods: {
     displayHome(){
+      alert('ok');
         this.showHome = true;
         this.showContracts = false,
         this.showBlaster = false,

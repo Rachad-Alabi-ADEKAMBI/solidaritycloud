@@ -58,9 +58,7 @@ a:hover{
     height: 70vh;
     min-height: 450px;
     margin: 0 auto;
-    display: block;
-    background-image: url('http://127.0.0.1/solidairecloud/public/img/sander-weeteling-KABfjuSOx74-unsplash(1).jpg');
-    background-position: center;
+    display: block;    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -69,14 +67,14 @@ a:hover{
     url('http://127.0.0.1/solidairecloud/public/img/sander-weeteling-KABfjuSOx74-unsplash(1).jpg');
 
     width: 100%;
-    padding-top: 90px;
+    padding-top: 20px;
 
 
     &__content{
         width: 80%;
         margin: auto;
         height: 100%;
-        padding-top: 60px;
+        padding-top: 80px;
         text-align: center;
 
         h1{
@@ -86,9 +84,13 @@ a:hover{
         }
 
         p{
-            margin: 20px auto;
-            font-style: 1.1em;
+            margin: 50px auto;
+            font-style: 1.2em;
             font-weight: 800;
+        }
+
+        .btn{
+            margin: 40px auto;
         }
 
 

@@ -12,11 +12,14 @@
         <?php include 'parts/header.php'; ?>
 
         <div class='content' id='app'> <br>
-            <div class=' v-if=' showHome'>
+            <div class='' v-if='showHome'>
                 <section class='section'>
                     <div class='container'>
                         <div class='hero'>
                             <div class='hero__content'>
+                                <h1 class="animation">
+                                    {{ mot }}
+                                </h1>
                                 <h1>
                                     SOLIDAIRE CLOUD
                                 </h1>
